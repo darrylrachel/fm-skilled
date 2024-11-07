@@ -1,0 +1,37 @@
+@import 'reset.css';
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+}
+
+main {
+    max-width: 376px;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo img {
+    width: 80px;
+}
+
+.header__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #13183F;
+    color: #FFFFFF;
+    height: 48px;
+    width: 140px;
+    border-radius: 26px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* #13183F */
