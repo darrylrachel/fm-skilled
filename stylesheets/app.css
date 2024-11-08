@@ -2,6 +2,7 @@
 @import 'components.css';
 
 body {
+    background-color: #F6F6FE;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 16px;
 }
@@ -66,8 +67,53 @@ main {
     margin-top: 80px;
 }
 
-/* .hero__heading */
-/* .hero__subheading */
-/* .hero__button */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content__heading {
+    margin-top: 120px;
+    color: #FFFFFF;
+    background: rgb(255,111,72);
+    background: linear-gradient(180deg, rgba(255,111,72,1) 0%, rgba(240,42,166,1) 100%);
+    padding: 30px;
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px; 
+}
+
+.content__card {
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 8px #f6f6fe;
+    /* overflow: hidden; */
+}
+
+.content__card-icon {
+    background: url('/assets/icon-animation.svg');
+    background-repeat: no-repeat;
+    background-size: contain; /* Ensures the icon scales correctly */
+    border-radius: 15px;
+    position: absolute;
+    left: 28px;
+    top: -30px; /* Adjust this as needed to position the icon on top */
+    height: 60px;
+    width: 60px; /* Set width explicitly */
+
+}
+
+.content__card-card {
+    
+    padding: 20px;
+}
 
 /* #13183F */
