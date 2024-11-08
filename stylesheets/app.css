@@ -83,7 +83,8 @@ main {
     border-radius: 15px;
     font-size: 24px;
     font-weight: 700;
-    line-height: 30px; 
+    line-height: 30px;
+    margin-bottom: 30px;
 }
 
 .content__card {
@@ -95,11 +96,11 @@ main {
     border-radius: 15px;
     background-color: #FFFFFF;
     box-shadow: 3px 3px 8px #f6f6fe;
-    /* overflow: hidden; */
+    margin-bottom: 30px;
 }
 
 .content__card-icon {
-    background: url('/assets/icon-animation.svg');
+    /* background: url('/assets/icon-animation.svg'); */
     background-repeat: no-repeat;
     background-size: contain; /* Ensures the icon scales correctly */
     border-radius: 15px;
@@ -108,12 +109,32 @@ main {
     top: -30px; /* Adjust this as needed to position the icon on top */
     height: 60px;
     width: 60px; /* Set width explicitly */
-
 }
 
 .content__card-card {
-    
     padding: 20px;
 }
+
+.content__card-card .card-title {
+    color: #13183F;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.content__card-card .card-description {
+    color: #83869A;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.content__card-card .card-button {
+    color: #F74780;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
 
 /* #13183F */
