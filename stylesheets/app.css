@@ -5,6 +5,7 @@ body {
     background-color: #F6F6FE;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 16px;
+    margin: 0;
 }
 
 main {
@@ -12,14 +13,15 @@ main {
     padding: 10px;
 }
 
-.header {
+.header, .footer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.header__logo img {
+.header__logo img,
+.footer__logo img {
     width: 80px;
 }
 
@@ -134,6 +136,21 @@ main {
     font-weight: 600;
     font-size: 16px;
     margin-top: 20px;
+}
+
+.footer {
+    background-color: #13183F;
+    width: 100%;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer__button {
+    background: rgb(72,81,255);
+    background: linear-gradient(180deg, rgba(72,81,255,1) 0%, rgba(240,42,166,1) 100%);
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 
