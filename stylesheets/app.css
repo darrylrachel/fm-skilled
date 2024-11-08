@@ -9,6 +9,7 @@ body {
 }
 
 main {
+    width: 100%;
     max-width: 376px;
     padding: 10px;
 }
@@ -35,7 +36,6 @@ main {
 .hero {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: space-between;
     margin-top: 60px;
 }
@@ -102,15 +102,14 @@ main {
 }
 
 .content__card-icon {
-    /* background: url('/assets/icon-animation.svg'); */
     background-repeat: no-repeat;
-    background-size: contain; /* Ensures the icon scales correctly */
+    background-size: contain;
     border-radius: 15px;
     position: absolute;
     left: 28px;
-    top: -30px; /* Adjust this as needed to position the icon on top */
+    top: -30px;
     height: 60px;
-    width: 60px; /* Set width explicitly */
+    width: 60px;
 }
 
 .content__card-card {
@@ -151,6 +150,46 @@ main {
     color: #FFFFFF;
     font-size: 15px;
     font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        width: 100%;
+        min-width: 768px;
+        padding: 0;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 0px;
+        width: 768px;
+        position: relative;
+    }
+
+    .hero__text {
+        /* flex: 1; */
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Space between heading, subheading, and button */
+        width: 600px;
+    }
+
+    .hero__subheading {
+        padding: 0 6px;
+        font-size: 16px;
+    }
+
+
+    .hero__img {
+        background: url('/assets/image-hero-desktop.png') no-repeat center center;
+        background-size: auto;
+        height: 600px;
+        width: 100%;
+        margin-top: 0;
+    }
 }
 
 
